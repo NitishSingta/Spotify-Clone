@@ -27,13 +27,16 @@ body{
     background-color: #121212;
     flex:1;
     border-radius: .5rem;
-    overflow:auto;
+    overflow: hidden;
     position: absolute;
     left: 435px;
     right: 0px;
     top: 0px;
     bottom: 80px;
-    padding: 0 1rem;
+    padding-left: 1rem;
+}
+.main_content:hover{
+    overflow: auto;
 }
 
 .music-player{
@@ -237,25 +240,44 @@ button .liblable{
 
 .card-section{
     width: 100%;
+    padding-top: 20px;
+    overflow-x: hidden;
 }
+
+.card-section:hover{
+    overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+    width: 15px; 
+    height: 10px; 
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(169, 169, 169, .4);
+    /* border: 5px solid #121212; */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(169, 169, 169, .8);
+}
+::-webkit-scrollbar-corner {
+    background: transparent; 
+}
+
 .card-head h3{
     font-weight: 700;
 }
 .cards-container{
-    
-    
     /* commnted area is for 
     responsiveness when all sections 
     contain >=5 cards*/
-
-
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem; */
     display: flex;
-    overflow-x: auto;
     padding: 1rem 0;
-
 }
 
 .card{
@@ -400,4 +422,3 @@ button .liblable{
     opacity: 1;
     cursor: pointer;
 }
-

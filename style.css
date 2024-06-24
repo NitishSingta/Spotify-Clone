@@ -33,10 +33,10 @@ body{
     right: 0px;
     top: 0px;
     bottom: 80px;
-    padding-left: 1rem;
+    padding: 0 1rem;
 }
 .main_content:hover{
-    overflow: auto;
+    overflow: overlay;
 }
 
 .music-player{
@@ -245,12 +245,12 @@ button .liblable{
 }
 
 .card-section:hover{
-    overflow-x: auto;
+    overflow-x: overlay;
 }
 
 ::-webkit-scrollbar {
     width: 15px; 
-    height: 10px; 
+    height: 10px;
 }
 ::-webkit-scrollbar-track{
     background: transparent;
